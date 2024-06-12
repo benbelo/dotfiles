@@ -1,7 +1,12 @@
 # dotfiles
 
-All my dotfiles (zsh, tmux, nvim, vim...)
+All my dotfiles : zsh, tmux, neovim, vim
 
+### File locations :
+- ZSH : ~/.zshrc
+- Tmux : ~/.tmux.conf
+- Vim : ~/.vimrc
+- Neovim : ~/.config/nvim/init.vim
 
 ### For VIM
 ```bash
