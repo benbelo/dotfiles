@@ -12,13 +12,13 @@ export GPG_TTY=$TTY
 ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE="nerdfont-complete"
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
-# Uncomment the following line to enable command auto-correction.
+# Autocorrect (I don't use it)
 ENABLE_CORRECTION="true"
 # plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# User config
 export EDITOR='vim'
 export PATH="$HOME/.npm/bin:$PATH"
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
