@@ -1,0 +1,46 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Vim mode
+bindkey -v
+
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+# Path to your Oh My Zsh installation.
+#export ZSH="$HOME/.oh-my-zsh"
+
+plugins=(git)
+
+# User configuration
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# export MANPATH="/usr/local/man:$MANPATH"
+export PATH=/opt/homebrew/bin:$PATH
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Aliases
+alias todo='vim "$HOME/syncthing/tech/notes/_todo.txt"'
+alias journal='vim "$HOME/syncthing/tech/notes/_journal.txt"'
+alias scratch='vim "$HOME/syncthing/tech/notes/_scratchpad.txt"'
+alias projects='vim "$HOME/syncthing/tech/notes/_projects.txt"'
+alias notes='cd "$HOME/syncthing/tech/notes/"'
+alias code='cd "$HOME/syncthing/tech/code/"'
+
+# Cheat.sh
+cheat() {
+	curl cheat.sh/$1
+}
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Created by `pipx` on 2025-08-26 06:46:44
+export PATH="$PATH:/Users/benjamin/.local/bin"
