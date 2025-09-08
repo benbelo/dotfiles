@@ -1,0 +1,67 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.Trash-*/     # user trash on some Linux systems
+.nfs*
+
+# Common IDE/editor folders
+.idea/        # JetBrains (IntelliJ, PyCharm, etc.)
+.vscode/      # VSCode config (unless you want to share it)
+*.sublime-work
+*.sublime-project
+
+# System temp files
+*.swp         # Vim swap files
+*.bak
+*~
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Logs
+*.log
+
+# Git
+*.orig
+
+# Compiled binaries and artifacts
+*.o
+*.so
+*.out
+*.exe
+*.a
+*.class
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.7z
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Docker
+**/.dockerignore
+docker-compose.override.yml
+
+# Secrets (handle carefully!)
+.env
+.env.*
