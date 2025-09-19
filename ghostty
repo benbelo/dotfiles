@@ -1,0 +1,4 @@
+#.config/ghostty/config 
+title = Ghostttttttty
+shell-integration = zsh
+font-size = 10
