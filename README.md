@@ -1,6 +1,5 @@
-All my dotfiles : zsh, tmux, neovim, vim
-
-### locations :
+### dotfile locations :
 - ZSH : `~/.zshrc`
+- Ghostty : `~/.config/ghostty/config`
 - Tmux : `~/.tmux.conf`
 - Vim : `~/.vimrc`
