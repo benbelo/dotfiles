@@ -2,6 +2,4 @@
 title = Ghostttttttty
 shell-integration = zsh
 cursor-style = block
-
-# Linux only
 font-size = 10
