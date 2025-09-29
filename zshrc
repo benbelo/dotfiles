@@ -43,12 +43,12 @@ alias gp='git push'
 alias gpl='git pull'
 alias gcm='git commit -m'
 alias r='source .zshrc'
-alias hcompta="hledger -f ~/Desktop/compta.journal"
-alias hmanual="vim ~/Desktop/compta.journal"
-alias hadd="hcompta add"
-alias hreg="hcompta register"
-alias hbud="hcompta bal --budget"
-alias hres="hcompta incomestatement"
+alias hcompta='hledger -f "$HOME/syncthing/personal/finances/compta.journal"'
+alias hmanual='vim "$HOME/syncthing/personal/finances/compta.journal"'
+alias hadd='hcompta add'
+alias hreg='hcompta register'
+alias hbud='hcompta bal --budget'
+alias hres='hcompta incomestatement'
 
 
 # Cheat.sh
