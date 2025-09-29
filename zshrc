@@ -50,6 +50,7 @@ alias hadd='hcompta add'
 alias hreg='hcompta register'
 alias hbud='hcompta bal --budget'
 alias hres='hcompta incomestatement'
+alias hweb='hcompta web'
 
 
 # Cheat.sh
