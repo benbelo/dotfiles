@@ -29,15 +29,11 @@ export PATH=/opt/homebrew/bin:$PATH
 # export LANG=en_US.UTF-8
 
 # Aliases
-alias todo='vim "$HOME/syncthing/tech/notes/_todo.txt"'
-alias journal='vim "$HOME/syncthing/tech/notes/_journal.txt"'
-alias scratch='vim "$HOME/syncthing/tech/notes/_scratchpad.txt"'
+alias todo='vim "$HOME/syncthing/tech/notes/_journal.txt"'
 alias projects='vim "$HOME/syncthing/tech/notes/_projects.txt"'
 alias notes='cd "$HOME/syncthing/tech/notes/"'
 alias code='cd "$HOME/syncthing/tech/code/"'
 alias finances='cd "$HOME/syncthing/personal/finances/"'
-alias vvim='vim "$HOME/syncthing/tech/notes/vim.md"'
-alias ttmux='vim "$HOME/syncthing/tech/notes/tmux.md"'
 alias gs='git status'
 alias ga='git add .'
 alias gp='git push'
