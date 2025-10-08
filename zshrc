@@ -14,9 +14,6 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# display name
-# export DEFAULT_USER=$USER
-
 plugins=(git)
 
 # User configuration
@@ -25,11 +22,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH=/opt/homebrew/bin:$PATH
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 # Aliases
-alias todo='vim "$HOME/syncthing/tech/notes/_journal.txt"'
+alias todo='vim "$HOME/syncthing/tech/notes/_todo.txt"'
+alias journal='vim "$HOME/syncthing/tech/notes/_journal.txt"'
 alias projects='vim "$HOME/syncthing/tech/notes/_projects.txt"'
 alias notes='cd "$HOME/syncthing/tech/notes/"'
 alias code='cd "$HOME/syncthing/tech/code/"'
@@ -48,14 +43,12 @@ alias hbud='hcompta bal --budget'
 alias hres='hcompta incomestatement'
 alias hweb='hcompta web'
 
-
 # Cheat.sh
 cheat() {
 	curl cheat.sh/$1
 }
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Created by `pipx` on 2025-08-25 07:30:49
