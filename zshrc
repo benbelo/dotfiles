@@ -2,11 +2,20 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Auto-completion
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(git docker kubectl npm)
+source $ZSH/oh-my-zsh.sh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#### TUNING ####
+
+# Homebrew
+export PATH=/opt/homebrew/bin:$PATH
+
+# Auto-Completion
 autoload -Uz compinit
 compinit
-
-# Options d'autocomplétion améliorées
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'  # Insensible à la casse
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"     # Couleurs
@@ -14,28 +23,8 @@ setopt COMPLETE_ALIASES                                      # Complétion des a
 setopt AUTO_LIST                                             # Liste automatique des choix
 setopt AUTO_MENU                                             # Menu de complétion automatique
 
-# Vim mode
+# Vim Keybindings
 bindkey -v
-
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
-# Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-# display name
-# export DEFAULT_USER=$USER
-
-plugins=(git docker kubectl npm)
-
-# User configuration
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
-# export MANPATH="/usr/local/man:$MANPATH"
-export PATH=/opt/homebrew/bin:$PATH
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
 
 # Aliases
 alias todo='vim "$HOME/syncthing/tech/notes/_todo.txt"'
@@ -68,14 +57,3 @@ alias dcl='docker-compose logs'
 cheat() {
         curl cheat.sh/$1
 }
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Created by `pipx` on 2025-08-25 07:30:49
-   export PATH="$PATH:/home/benj/.local/bin"
-
-cd ~/
-
-POWERLEVEL10K_CONTEXT_TEMPLATE="%n"
